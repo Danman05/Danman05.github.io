@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Other stylesheets -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Custom stylesheets -->
+    <link href="style.css" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav" id="topNav">
+            <a href="index.html">Home</a>
+            <a href="#" class="active">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a class="icon" onclick="toggleNav()">
+                <i class="bx bx-menu"></i>
+            </a>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <section>
+                <h2>Introduction</h2>
+                    <p>Hello I'm Daniel, an 18-year-old student specializing in computer programming. I started my
+                        journey by the end of 2022, and the world of technology continues to amaze me.</p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <p>My occupation is known as "Data technician specialized in programming", where I focus on
+                    skills in computer science with a specialization in programming. The dynamic and ever-evolving
+                    nature of
+                    this field keeps me engaged and excited about learning.</p>
+                <p>Illustratation of my educational progress </p>
+
+                <div class="period-label" id="period">
+                    
+                </div>
+                <div class="progress-container">
+                    <div class="prog" id="progress-bar"></div>
+                </div>
+                <div class="progress-label">
+                    <p class="startDate"></p>
+                    <p class="endDate"></p>                    
+                </div>
+            </section>
+
+            <section>
+                <h2>Interests</h2>
+                <p>Computers are not just a study subject for me,
+                    it's a passion where i can explore new technologies, and find innovative solutions to problems.</p>
+                                <p>I often spend my spare time learning about different technologies, wether if it's older or newer i
+                                    still find it interesting
+                                </p>
+                <p>Additionally, I have an interest in finance. Understanding the financial world
+                    and exploring the possibilities is personally rewarding.
+                </p>
+            </section>
+
+            <section>
+                <h2>Personal Life</h2>
+                <p>While I enjoy my time in the digital world, I also value real-world connections. Hanging out with
+                    friends & family, whether it's exploring new places, enjoying good food, or simply having
+                    conversations means a lot to me.
+                </p>
+            </section>
+
+            <section>
+                <h2>Final words</h2>
+                <p>Thank you for taking the time to learn a bit about me. I look forward to the
+                    exciting opportunities and challenges.</p>
+            </section>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script>
+        calculateEducationTime();
+    </script>
+</body>
+
+</html>
