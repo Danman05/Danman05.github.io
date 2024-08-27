@@ -7,8 +7,10 @@ const body = document.getElementsByTagName('body')[0];
 function party (event) {
     keyArr.push(event.key);
     
-    if (keyArr.join("") === secretSequence)  body.className = "party";
-    
+    if (keyArr.join("") === secretSequence) {
+        body.className = "party";
+    } 
+
     clearTimeout(timeoutId); 
     timeoutId = setTimeout(() => {
         keyArr = [];

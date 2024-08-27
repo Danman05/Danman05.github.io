@@ -250,7 +250,7 @@ section {
 }
 
 .portfolio section {
-    padding: 6rem 4% 0px;
+    padding: 2rem 4% 0px;
 }
 
 .portfolio-content h3 {
@@ -271,15 +271,25 @@ section {
     font-weight: 700;
     line-height: 1.3;
 }
-
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 .project {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    max-width: 42rem;
+    min-width: 29rem;
     margin: 1.5rem;
     padding: 8px;
-    border: 2px solid var(--main-color);
+    background: linear-gradient(var(--second-bg-color), var(--second-bg-color)) padding-box,
+    linear-gradient(60deg, #4ECDC4, #556270) border-box;
+    border: 3px solid transparent;
     border-radius: 28px;
     transition: transform .2s;
 }
@@ -296,9 +306,21 @@ li {
 
 .github-link {
     margin-top: 26px;
+    background: linear-gradient(var(--second-bg-color), var(--second-bg-color)) padding-box,
+    linear-gradient(60deg, #556270, #4ECDC4) border-box;
+    border: 2px solid transparent;
+    border-radius: 28px;
+    padding: 6px;
+    font-size: 14px;
 
 }
+.github-private {
+    margin-top: 26px;
+    background: var(--second-bg-color);
+    padding: 1vw;
+    font-size: 14px;
 
+}
 .github-link span:hover {
     text-decoration: underline;
 }
@@ -345,33 +367,5 @@ li {
         float: none;
         display: block;
         text-align: left;
-    }
-}
-
-.party {
-    animation: party 1s infinite;
-}
-
-@keyframes party {
-
-    0% {
-        background: red;
-    }
-
-    25% {
-
-        background: blue;
-    }
-
-    50% {
-        background: yellow;
-    }
-
-    75% {
-        background: green;
-    }
-
-    100% {
-        background: red;
     }
 }

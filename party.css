@@ -1,0 +1,27 @@
+.party {
+    animation: party 1s infinite;
+}
+
+@keyframes party {
+
+    0% {
+        background: red;
+    }
+
+    25% {
+
+        background: blue;
+    }
+
+    50% {
+        background: yellow;
+    }
+
+    75% {
+        background: green;
+    }
+
+    100% {
+        background: red;
+    }
+}
